@@ -1,0 +1,96 @@
+~/workspace$ ./github_push.sh
+=========================================
+GitHub Push Script
+=========================================
+Enter GitHub repository URL:
+https://github.com/asanseir724/56654456
+Enter your GitHub personal access token:
+Using provided GitHub token
+Git repository already exists.
+Updating remote origin...
+
+[1/4] Adding all changes...
+
+[2/4] Committing changes...
+Enter commit message (default: Update bot code):
+Update bot code
+[main b4ea06c] Update bot code
+ 1 file changed, 94 insertions(+), 9 deletions(-)
+
+[3/4] Fetching remote branches...
+
+[4/4] Pushing to GitHub...
+Enumerating objects: 69, done.
+Counting objects: 100% (69/69), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (54/54), done.
+Writing objects: 100% (54/54), 18.80 KiB | 9.40 MiB/s, done.
+Total 54 (delta 35), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (35/35), completed with 14 local objects.
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote: 
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote: 
+remote:     - Push cannot contain secrets
+remote: 
+remote:     
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:     
+remote:     
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: 724f5f89795b84576125e11dbd0e5d445056e938
+remote:            path: update_github.sh:29
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/asanseir724/56654456/security/secret-scanning/unblock-secret/2vcWbeyxmiCwcp1GYif33tuxPmq
+remote:     
+remote: 
+remote: 
+To https://github.com/asanseir724/56654456.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/asanseir724/56654456.git'
+Failed to push to main branch
+Trying to push to master branch instead...
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/asanseir724/56654456.git'
+Creating and pushing to a new branch instead...
+Switched to a new branch 'update_20250412_083344'
+Enumerating objects: 69, done.
+Counting objects: 100% (69/69), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (54/54), done.
+Writing objects: 100% (54/54), 18.80 KiB | 9.40 MiB/s, done.
+Total 54 (delta 35), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (35/35), completed with 14 local objects.
+remote: error: GH013: Repository rule violations found for refs/heads/update_20250412_083344.
+remote: 
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote: 
+remote:     - Push cannot contain secrets
+remote: 
+remote:     
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:     
+remote:     
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: 724f5f89795b84576125e11dbd0e5d445056e938
+remote:            path: update_github.sh:29
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/asanseir724/56654456/security/secret-scanning/unblock-secret/2vcWbeyxmiCwcp1GYif33tuxPmq
+remote:     
+remote: 
+remote: 
+To https://github.com/asanseir724/56654456.git
+ ! [remote rejected] update_20250412_083344 -> update_20250412_083344 (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/asanseir724/56654456.git'
+❌ Failed to push to GitHub. Please check your credentials and repository access.
+~/workspace$ 
